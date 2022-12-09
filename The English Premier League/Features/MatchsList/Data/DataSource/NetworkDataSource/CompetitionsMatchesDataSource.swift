@@ -13,7 +13,7 @@ protocol CompetitionsMatchesServiceDataSourceProtocol{
 }
 
 
-class CompetitionsMatchesServiceDataSource : CompetitionsMatchesServiceDataSourceProtocol {
+class CompetitionsMatchesDataSource : CompetitionsMatchesServiceDataSourceProtocol {
     
     private let service = WebService<CompetitionsMatchesService>()
     

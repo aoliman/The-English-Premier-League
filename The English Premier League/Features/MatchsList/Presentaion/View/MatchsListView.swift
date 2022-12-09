@@ -16,11 +16,10 @@ struct MatchsListView: View {
         }
     var body: some View {
         VStack() {
-            HStack(alignment: .top) {
-                SegmentedView()
-                
-            }
             
+            HStack(alignment: .top) {
+                segmentedView()
+            }
             
             Spacer()
             switch viewModel.state {
@@ -34,9 +33,7 @@ struct MatchsListView: View {
                 Text(error)
             }
             Spacer()
-           
-            
-       
+                
         }.onAppear{
             viewModel.getMatches()
         }
@@ -44,7 +41,7 @@ struct MatchsListView: View {
     }
     
     
-    private func SegmentedView() -> some View{
+    private func segmentedView() -> some View{
         VStack{
             Picker("", selection: $isFavorite ) {
                 Text(Strings.SegmentedView.all).tag(0)
@@ -67,13 +64,11 @@ struct MatchsListView: View {
                     }
                 })
             }.listRowSeparator(.hidden)
-                        
-                    }.onAppear(perform: {
-                        viewModel.getMatches()
-                    }).listStyle(.grouped).listRowSeparator(.hidden)
+            }.listStyle(.grouped).listRowSeparator(.hidden)
             .background(Color.clear)
     }
    
+    
 }
 
 struct MatchsListView_Previews: PreviewProvider {

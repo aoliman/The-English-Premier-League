@@ -11,6 +11,7 @@ import Kingfisher
 public struct MatchView: View {
     @ObservedObject private var viewModel  : MatchsListViewModel = HomeDIContainer.matchsListViewModel()
     private let match: Match?
+    
     init(match: Match?) {
         self.match = match
     }
@@ -34,7 +35,7 @@ public struct MatchView: View {
             
             HStack(alignment: .center) {
                 VStack(alignment: .center) {
-                    Logo(imageURL: URL( string: match?.homeTeam?.crest ?? ""))
+                    imageView(imageURL: URL( string: match?.homeTeam?.crest ?? ""))
                         .frame(width: 70, height: 45)
                     Text(match?.homeTeam?.shortName ?? "")
                         .font(.title3)
@@ -61,7 +62,7 @@ public struct MatchView: View {
                 Spacer()
                 
                 VStack(alignment: .center) {
-                    Logo(imageURL: URL( string: match?.awayTeam?.crest ?? ""))
+                    imageView(imageURL: URL( string: match?.awayTeam?.crest ?? ""))
                         .frame(width: 70, height: 45)
                     
                     Text(match?.awayTeam?.shortName ?? "" )
@@ -75,17 +76,14 @@ public struct MatchView: View {
                 .shadow(color: Color.black.opacity( 0.4), radius: 0.4)
             
         ).padding(8)
-        
-        
-        
+                
     }
     
     
     
 }
 
-private func Logo(imageURL: URL?) -> some View {
-    
+private func imageView(imageURL: URL?) -> some View {
     KFImage.url(imageURL)
         .resizable()
         .background(.white)
@@ -101,7 +99,6 @@ private func Logo(imageURL: URL?) -> some View {
 struct MatchView_Previews: PreviewProvider {
     static var previews: some View {
         let match =  Match(id: 1, homeTeam: Area( id:nil,name: "mmm", shortName: "Afc", crest: "https://crests.football-data.org/354.png", tla: ""), awayTeam: Area( id:nil,name: "mmm", shortName: "Afc", crest: "https://crests.football-data.org/354.png", tla: ""), time: "12:12", status: .finished, score: "0  -  2", compareDate: "1")
-        
         MatchView(match:match)
     }
 }

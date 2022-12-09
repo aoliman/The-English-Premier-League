@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CompetitionsMatchesRepProtocol{
+protocol CompetitionsMatchesRepProtocol : AnyObject{
     func getCompetitionsMatches() async  ->  [MatchModel]
     func getFavMatches()  ->  Set<Int>?
     func setFavMatches(ids:Set<Int>) 

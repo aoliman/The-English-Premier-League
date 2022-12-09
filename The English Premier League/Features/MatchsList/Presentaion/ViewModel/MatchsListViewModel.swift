@@ -21,6 +21,7 @@ public class MatchsListViewModel: ObservableObject  {
             getMatchsGroup()
         }
     }
+    
     var matches : [Match] =  []
     var favoriteMatches : [Match] =  []
     var savedFavoriteIds: Set<Int> = []

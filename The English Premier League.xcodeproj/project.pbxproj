@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E136908929428D690095F2D9 /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E136908829428D690095F2D9 /* UserDefaultsWrapper.swift */; };
 		E157D1BE2941E268005E115B /* The_English_Premier_LeagueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157D1BD2941E268005E115B /* The_English_Premier_LeagueApp.swift */; };
-		E157D1C02941E268005E115B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157D1BF2941E268005E115B /* ContentView.swift */; };
 		E157D1C22941E26A005E115B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E157D1C12941E26A005E115B /* Assets.xcassets */; };
 		E157D1C52941E26A005E115B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E157D1C42941E26A005E115B /* Preview Assets.xcassets */; };
 		E157D1C72941E26A005E115B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157D1C62941E26A005E115B /* Persistence.swift */; };
@@ -28,13 +27,23 @@
 		E157D2342941FD4B005E115B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E157D2332941FD4B005E115B /* Moya */; };
 		E157D2362941FD4B005E115B /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E157D2352941FD4B005E115B /* ReactiveMoya */; };
 		E157D2382941FD4B005E115B /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E157D2372941FD4B005E115B /* RxMoya */; };
+		E186D63F2943564700C93FFD /* MatchResponseModelDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D63E2943564700C93FFD /* MatchResponseModelDummyData.swift */; };
+		E186D6412943693600C93FFD /* CompetitionsMatchesServiceDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D6402943693600C93FFD /* CompetitionsMatchesServiceDataSourceTest.swift */; };
+		E186D64329436AAC00C93FFD /* CompetitionsMatchesServiceDataSourceMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D64229436AAC00C93FFD /* CompetitionsMatchesServiceDataSourceMocks.swift */; };
+		E186D645294371AB00C93FFD /* CompetitionsMatchesRepMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D644294371AB00C93FFD /* CompetitionsMatchesRepMock.swift */; };
+		E186D647294372A600C93FFD /* WebServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D646294372A600C93FFD /* WebServiceMock.swift */; };
+		E186D6492943770500C93FFD /* HomeDIContainerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D6482943770500C93FFD /* HomeDIContainerMock.swift */; };
+		E186D64B29437EB000C93FFD /* CompetitionsMatchesRepTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D64A29437EB000C93FFD /* CompetitionsMatchesRepTest.swift */; };
+		E186D64D2943972000C93FFD /* CompetitionsMatchesUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D64C2943972000C93FFD /* CompetitionsMatchesUseCaseTest.swift */; };
+		E186D64F2943976100C93FFD /* CompetitionsMatchesUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D64E2943976100C93FFD /* CompetitionsMatchesUseCaseMock.swift */; };
+		E186D65229439E3200C93FFD /* MatchsListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D65129439E3200C93FFD /* MatchsListViewModelTest.swift */; };
 		E1A060BE2941FF2100CE5217 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A060BD2941FF2100CE5217 /* DateFormatter.swift */; };
 		E1A060C02942000D00CE5217 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A060BF2942000D00CE5217 /* Date+Extension.swift */; };
 		E1A060C2294201E200CE5217 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A060C1294201E200CE5217 /* Strings.swift */; };
 		E1A060C5294204B200CE5217 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = E1A060C4294204B200CE5217 /* Factory */; };
 		E1A060CA2942058D00CE5217 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A060C92942058D00CE5217 /* DIContainer.swift */; };
 		E1A060CC2942087700CE5217 /* MatchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A060CB2942087700CE5217 /* MatchResponseModel.swift */; };
-		E1A060CE2942098700CE5217 /* CompetitionsMatchesServiceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A060CD2942098700CE5217 /* CompetitionsMatchesServiceDataSource.swift */; };
+		E1A060CE2942098700CE5217 /* CompetitionsMatchesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A060CD2942098700CE5217 /* CompetitionsMatchesDataSource.swift */; };
 		E1A060D02942099400CE5217 /* CompetitionsMatchesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A060CF2942099400CE5217 /* CompetitionsMatchesService.swift */; };
 		E1A060D32942141000CE5217 /* CompetitionsMatchesRepProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A060D22942141000CE5217 /* CompetitionsMatchesRepProtocol.swift */; };
 		E1A060D62942191100CE5217 /* AnyPublisher+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A060D52942191100CE5217 /* AnyPublisher+Extention.swift */; };
@@ -70,7 +79,6 @@
 		E136908829428D690095F2D9 /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
 		E157D1BA2941E268005E115B /* The English Premier League.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The English Premier League.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E157D1BD2941E268005E115B /* The_English_Premier_LeagueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_English_Premier_LeagueApp.swift; sourceTree = "<group>"; };
-		E157D1BF2941E268005E115B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E157D1C12941E26A005E115B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E157D1C42941E26A005E115B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E157D1C62941E26A005E115B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -86,12 +94,22 @@
 		E157D2112941ECCC005E115B /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		E157D2122941ECCC005E115B /* ErrorBodyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBodyResponse.swift; sourceTree = "<group>"; };
 		E157D2242941F3DA005E115B /* NotificationCenterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterManager.swift; sourceTree = "<group>"; };
+		E186D63E2943564700C93FFD /* MatchResponseModelDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResponseModelDummyData.swift; sourceTree = "<group>"; };
+		E186D6402943693600C93FFD /* CompetitionsMatchesServiceDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsMatchesServiceDataSourceTest.swift; sourceTree = "<group>"; };
+		E186D64229436AAC00C93FFD /* CompetitionsMatchesServiceDataSourceMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsMatchesServiceDataSourceMocks.swift; sourceTree = "<group>"; };
+		E186D644294371AB00C93FFD /* CompetitionsMatchesRepMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsMatchesRepMock.swift; sourceTree = "<group>"; };
+		E186D646294372A600C93FFD /* WebServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMock.swift; sourceTree = "<group>"; };
+		E186D6482943770500C93FFD /* HomeDIContainerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIContainerMock.swift; sourceTree = "<group>"; };
+		E186D64A29437EB000C93FFD /* CompetitionsMatchesRepTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsMatchesRepTest.swift; sourceTree = "<group>"; };
+		E186D64C2943972000C93FFD /* CompetitionsMatchesUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsMatchesUseCaseTest.swift; sourceTree = "<group>"; };
+		E186D64E2943976100C93FFD /* CompetitionsMatchesUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsMatchesUseCaseMock.swift; sourceTree = "<group>"; };
+		E186D65129439E3200C93FFD /* MatchsListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchsListViewModelTest.swift; sourceTree = "<group>"; };
 		E1A060BD2941FF2100CE5217 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		E1A060BF2942000D00CE5217 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E1A060C1294201E200CE5217 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E1A060C92942058D00CE5217 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		E1A060CB2942087700CE5217 /* MatchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResponseModel.swift; sourceTree = "<group>"; };
-		E1A060CD2942098700CE5217 /* CompetitionsMatchesServiceDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsMatchesServiceDataSource.swift; sourceTree = "<group>"; };
+		E1A060CD2942098700CE5217 /* CompetitionsMatchesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsMatchesDataSource.swift; sourceTree = "<group>"; };
 		E1A060CF2942099400CE5217 /* CompetitionsMatchesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsMatchesService.swift; sourceTree = "<group>"; };
 		E1A060D22942141000CE5217 /* CompetitionsMatchesRepProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsMatchesRepProtocol.swift; sourceTree = "<group>"; };
 		E1A060D52942191100CE5217 /* AnyPublisher+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+Extention.swift"; sourceTree = "<group>"; };
@@ -167,7 +185,6 @@
 				E157D2072941E9C4005E115B /* Utilities */,
 				E157D1F72941E8CC005E115B /* Network */,
 				E157D1BD2941E268005E115B /* The_English_Premier_LeagueApp.swift */,
-				E157D1BF2941E268005E115B /* ContentView.swift */,
 				E157D1C32941E26A005E115B /* Preview Content */,
 			);
 			path = "The English Premier League";
@@ -184,7 +201,9 @@
 		E157D1D22941E26A005E115B /* The English Premier LeagueTests */ = {
 			isa = PBXGroup;
 			children = (
+				E186D6342943503D00C93FFD /* Features */,
 				E157D1D32941E26A005E115B /* The_English_Premier_LeagueTests.swift */,
+				E186D646294372A600C93FFD /* WebServiceMock.swift */,
 			);
 			path = "The English Premier LeagueTests";
 			sourceTree = "<group>";
@@ -393,6 +412,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E186D6342943503D00C93FFD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E186D639294353C900C93FFD /* DiContainer */,
+				E186D6372943505800C93FFD /* Presentaion */,
+				E186D6362943505200C93FFD /* Domain */,
+				E186D6352943504C00C93FFD /* Data */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E186D6352943504C00C93FFD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E186D63C2943561100C93FFD /* Model */,
+				E186D63B2943544800C93FFD /* Repositories */,
+				E186D63A2943541600C93FFD /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E186D6362943505200C93FFD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E186D6382943530B00C93FFD /* Usecase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E186D6372943505800C93FFD /* Presentaion */ = {
+			isa = PBXGroup;
+			children = (
+				E186D65029439E1100C93FFD /* ViewModel */,
+			);
+			path = Presentaion;
+			sourceTree = "<group>";
+		};
+		E186D6382943530B00C93FFD /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				E186D64C2943972000C93FFD /* CompetitionsMatchesUseCaseTest.swift */,
+				E186D64E2943976100C93FFD /* CompetitionsMatchesUseCaseMock.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		E186D639294353C900C93FFD /* DiContainer */ = {
+			isa = PBXGroup;
+			children = (
+				E186D6482943770500C93FFD /* HomeDIContainerMock.swift */,
+			);
+			path = DiContainer;
+			sourceTree = "<group>";
+		};
+		E186D63A2943541600C93FFD /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				E186D6402943693600C93FFD /* CompetitionsMatchesServiceDataSourceTest.swift */,
+				E186D64229436AAC00C93FFD /* CompetitionsMatchesServiceDataSourceMocks.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		E186D63B2943544800C93FFD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E186D644294371AB00C93FFD /* CompetitionsMatchesRepMock.swift */,
+				E186D64A29437EB000C93FFD /* CompetitionsMatchesRepTest.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E186D63C2943561100C93FFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E186D63E2943564700C93FFD /* MatchResponseModelDummyData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E186D65029439E1100C93FFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E186D65129439E3200C93FFD /* MatchsListViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E1A060C72942058200CE5217 /* DIContainer */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,7 +511,7 @@
 		E1A060D12942131700CE5217 /* NetworkDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				E1A060CD2942098700CE5217 /* CompetitionsMatchesServiceDataSource.swift */,
+				E1A060CD2942098700CE5217 /* CompetitionsMatchesDataSource.swift */,
 				E1A060CF2942099400CE5217 /* CompetitionsMatchesService.swift */,
 			);
 			path = NetworkDataSource;
@@ -568,12 +675,11 @@
 				E157D20E2941ECB3005E115B /* WebService.swift in Sources */,
 				E1A060E229422D1E00CE5217 /* MatchsListView.swift in Sources */,
 				E1A060C02942000D00CE5217 /* Date+Extension.swift in Sources */,
-				E1A060CE2942098700CE5217 /* CompetitionsMatchesServiceDataSource.swift in Sources */,
+				E1A060CE2942098700CE5217 /* CompetitionsMatchesDataSource.swift in Sources */,
 				E157D2252941F3DA005E115B /* NotificationCenterManager.swift in Sources */,
 				E157D1C72941E26A005E115B /* Persistence.swift in Sources */,
 				E1A060DC2942212100CE5217 /* CompetitionsMatchesUseCase.swift in Sources */,
 				E1A060D829421C8800CE5217 /* CompetitionsMatchesRep.swift in Sources */,
-				E157D1C02941E268005E115B /* ContentView.swift in Sources */,
 				E157D2142941ECCC005E115B /* ErrorBodyResponse.swift in Sources */,
 				E1A060E42942342200CE5217 /* MatchView.swift in Sources */,
 				E1A060D32942141000CE5217 /* CompetitionsMatchesRepProtocol.swift in Sources */,
@@ -600,6 +706,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E157D1D42941E26A005E115B /* The_English_Premier_LeagueTests.swift in Sources */,
+				E186D647294372A600C93FFD /* WebServiceMock.swift in Sources */,
+				E186D64B29437EB000C93FFD /* CompetitionsMatchesRepTest.swift in Sources */,
+				E186D64D2943972000C93FFD /* CompetitionsMatchesUseCaseTest.swift in Sources */,
+				E186D65229439E3200C93FFD /* MatchsListViewModelTest.swift in Sources */,
+				E186D6412943693600C93FFD /* CompetitionsMatchesServiceDataSourceTest.swift in Sources */,
+				E186D645294371AB00C93FFD /* CompetitionsMatchesRepMock.swift in Sources */,
+				E186D64329436AAC00C93FFD /* CompetitionsMatchesServiceDataSourceMocks.swift in Sources */,
+				E186D6492943770500C93FFD /* HomeDIContainerMock.swift in Sources */,
+				E186D63F2943564700C93FFD /* MatchResponseModelDummyData.swift in Sources */,
+				E186D64F2943976100C93FFD /* CompetitionsMatchesUseCaseMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
