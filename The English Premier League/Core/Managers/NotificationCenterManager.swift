@@ -2,7 +2,7 @@
 //  NotificationCenterManager.swift
 //  MotoMoneyCore
 //
-//  Created by Mahmoud Elsheikh on 10/02/2022.
+//  Created by Soliman Yousry on 10/02/2022.
 //
 
 import Foundation
