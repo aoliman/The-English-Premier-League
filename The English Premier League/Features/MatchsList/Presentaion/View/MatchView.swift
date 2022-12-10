@@ -84,8 +84,7 @@ public struct MatchView: View {
 }
 
 private func imageView(imageURL: URL?) -> some View {
-    KFImage.url(imageURL)
-        .resizable()
+    KFImage.url(imageURL).placeholder{KFImage.url(URL( string: Strings.placeHolder)).resizable()}.resizable()
         .background(.white)
         .frame(width: 40, height: 40)
         .clipShape(Circle())

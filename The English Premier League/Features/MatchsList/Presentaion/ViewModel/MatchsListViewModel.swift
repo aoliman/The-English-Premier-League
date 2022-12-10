@@ -31,6 +31,7 @@ public class MatchsListViewModel: ObservableObject  {
             matches =  await useCase.getMatches()
             getMatchsGroup()
             savedFavoriteIds = useCase.getFavMatches()
+            getFavoriteMatches()
         }
     }
     
@@ -51,9 +52,7 @@ public class MatchsListViewModel: ObservableObject  {
             guard let self = self else {return}
             withAnimation() {
                 self.matchesGroup = dic.map{$0.value}
-                self.matchesGroup = self.matchesGroup.sorted(by: {
-                    $0.matchDate.compare($1.matchDate) == .orderedAscending
-                })
+                self.sortMatchsGroup()
                 self.state = self.isFavorite ? .ShowFavorite(self.matchesGroup): .showMatchesGroup(self.matchesGroup)
             }
         }
@@ -68,6 +67,7 @@ public class MatchsListViewModel: ObservableObject  {
         useCase.setFavMatches(ids: savedFavoriteIds)
         getFavoriteMatches()
         getMatchsGroup()
+        
     }
     
     func getFavoriteMatches(){
@@ -80,6 +80,17 @@ public class MatchsListViewModel: ObservableObject  {
     func isFavorite (match: Match) -> Bool {
       return savedFavoriteIds.contains(match.id)
     }
+    
+    func sortMatchsGroup(){
+        self.matchesGroup = self.matchesGroup.sorted(by: {
+            $0.matchDate.compare($1.matchDate) == .orderedAscending
+        })
+        let lastGroups = self.matchesGroup.filter({DateHelper().getCurrentDate(with: .dd_MM_yyyy)! > DateHelper.date(from: $0.sectionTitle,with: .dd_MM_yyyy)!})
+        let nextGroups = self.matchesGroup.filter({DateHelper().getCurrentDate(with: .dd_MM_yyyy)! <= DateHelper.date(from: $0.sectionTitle,with: .dd_MM_yyyy)!})
+        self.matchesGroup.removeAll()
+        self.matchesGroup.append(contentsOf: nextGroups)
+        self.matchesGroup.append(contentsOf: lastGroups)
+      }
     
     
 }

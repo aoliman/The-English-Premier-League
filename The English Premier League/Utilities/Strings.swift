@@ -32,5 +32,7 @@ struct Strings {
         public static let favorite = "Favorite"
     }
     
+    public static let placeHolder = "https://crests.football-data.org/PL.png"
+    
     
 }
