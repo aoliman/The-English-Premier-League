@@ -19,7 +19,7 @@
 * 4. Each Repository returns data from a Remote Data `(Network)`
 * 5. Information flows back to the `View(UI)` where we display the weaather data.
 
-
+## Folder Structure
 ![](https://github.com/aoliman/The-English-Premier-League/blob/main/MVVMCleanArchitecture.png?raw=true)
 
 
