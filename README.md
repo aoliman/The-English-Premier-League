@@ -19,9 +19,6 @@
 * 4. Each Repository returns data from a Remote Data `(Network)`
 * 5. Information flows back to the `View(UI)` where we display the weaather data.
 
-## Folder Structure
-![](https://github.com/aoliman/The-English-Premier-League/blob/main/MVVMCleanArchitecture.png?raw=true)
-
 
 ## Dependency Direction
 * `Use Factory Dependency Injection To Solve Dependencies` 
@@ -30,6 +27,10 @@
 * `Domain Layer` = `Entities` + `Use Cases` + `Repositories Interfaces`
 * `Data Repositories Layer` = `Repositories Implementations` + `API(Network)` + `Persistence DB`
 * For more about Factory please check: (https://github.com/hmlongco/Factory)
+
+
+## Folder Structure
+![](https://github.com/aoliman/The-English-Premier-League/blob/main/MVVMCleanArchitecture.png?raw=true)
 
 
 ##### Domain Layer
